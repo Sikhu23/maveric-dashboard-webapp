@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiservicesService } from '../apiservices.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ApiservicesService } from '../apiservices.service';
 export class LoginComponent implements OnInit {
   user:any={}
 
-  constructor(private service: ApiservicesService) { }
+  constructor(private service: ApiservicesService,private route: Router) { }
 
   ngOnInit(): void {
 
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
       ...this.user
     }
     console.log("*******Login Details*****",body)
+    this.route.navigateByUrl('/dashboard')
 
     // this.service.login(body).subscribe((response:any)=>{
     //   if(response.token){

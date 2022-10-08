@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,6 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
+import { IdeasComponent } from './pages/ideas/ideas.component';
+import { NoopAnimationPlayer } from '@angular/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -25,7 +29,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 
     LoginComponent,
     DashboardComponent,
-    SidebarComponent
+    SidebarComponent,
+    IdeasComponent
 
   ],
   imports: [
@@ -33,7 +38,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MatTabsModule
+    MatTabsModule,
+    RouterModule,
+    BrowserAnimationsModule
+
 
   ],
   providers: [],
