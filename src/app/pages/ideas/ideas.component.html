@@ -1,7 +1,7 @@
 <div class="">
   <p style="color:#7090A0;padding-left:38%;">Recently Posted</p>
 </div>
-<div class="centered"  *ngFor="let idea of ideas" [routerLink]="['/ideaDetails',idea.name]">
+<div class="centered"  *ngFor="let idea of ideas">
   <div class=" card " style=" background: #EBEFF3;
   box-shadow: 0px 4px 12px rgba(57, 57, 57, 0.12);
   border-radius: 4px;
@@ -14,7 +14,7 @@
         <h6 class="card-subtitle mb-2 text-muted">{{idea.timing}}</h6>
        </div>
        <div class="col-1">
-        <button class="btn btn-light">View Details</button>
+        <button class="btn btn-light"  [routerLink]="['/ideaDetails',idea.name]">View Details</button>
        </div>
       </div>
       <h6 class="card-title">{{idea.title}}</h6>
