@@ -7,6 +7,8 @@ import { SignupComponent } from './pages/signup/signup.component';
 
 
 import { LoginComponent } from './pages/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { LoginComponent } from './pages/login/login.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
