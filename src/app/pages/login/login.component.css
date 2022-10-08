@@ -1,0 +1,34 @@
+.right-signup{
+  position: absolute;
+  width: 1048.63px;
+  height: 1365.33px;
+  left: 570px;
+  top: -164.91px;
+
+  }
+
+  .image-position{
+  position: absolute;
+  width: 274px;
+  height: 280px;
+  left: 869px;
+  top: 210px;
+  }
+
+  *{
+    max-width: 100%;
+    background-color: #EBEFF3
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("../../../assets/Images/signup.png");
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
