@@ -1,3 +1,5 @@
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +12,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -20,14 +23,17 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
 
 
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    SidebarComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
 
   ],
   providers: [],
