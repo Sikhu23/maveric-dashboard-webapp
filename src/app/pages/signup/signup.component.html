@@ -11,34 +11,34 @@
         <p>Create an account to post your ideas & project information.</p>
        </div>
         <div class="mt-2">
-          <form>
+          <form (submit)="signup()">
             <div class="form-group m-3">
               <label for="firstName" >First Name</label>
-              <input type="email" class="form-control mt-1" id="firstName" placeholder="First Name">
+              <input type="text" class="form-control mt-1" id="firstName" placeholder="First Name" name="firstName" [(ngModel)]="userDetails.firstName">
             </div>
             <div class="form-group m-3">
                 <label for="middleName">Middle Name</label>
-                <input type="email" class="form-control mt-1" id="middleName"  placeholder="Middle Name">
+                <input type="text" class="form-control mt-1" id="middleName"  placeholder="Middle Name"  name="middleName" [(ngModel)]="userDetails.middleName">
             </div>
             <div class="form-group m-3">
                   <label for="lastName">Last Name</label>
-                  <input type="email" class="form-control mt-1" id="lastName"  placeholder="Last Name">
+                  <input type="text" class="form-control mt-1" id="lastName"  placeholder="Last Name" name="lastName" [(ngModel)]="userDetails.lastName">
             </div>
             <div class="form-group m-3">
               <label for="email">Email</label>
-              <input type="password" class="form-control mt-1" id="email" placeholder="Email">
+              <input type="email" class="form-control mt-1" id="email" placeholder="Email" name="email" [(ngModel)]="userDetails.email">
             </div>
             <div class="form-group m-3">
               <label for="password">Password</label>
-              <input type="password" class="form-control mt-1" id="password" placeholder="Password">
+              <input type="password" class="form-control mt-1" id="password" placeholder="Password" name="password" [(ngModel)]="userDetails.password">
             </div>
             <div class="form-group m-3">
               <label for="confirmPassword">Confirm Password</label>
-              <input type="password" class="form-control mt-1" id="confirmPassword" placeholder="Confirm Password">
+              <input type="password" class="form-control mt-1" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="userDetails.confirmPassword">
             </div>
             <div class="form-group form-check m-3">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">By creating an account you agree to the T&C and our Privacy Policy</label>
+              <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label"  for="exampleCheck1">By creating an account you agree to the T&C and our Privacy Policy</label>
             </div>
             <button type="submit" class="btn btn-primary w-100" style="background-color:#653FB1">Signup</button>
           </form>
@@ -46,7 +46,7 @@
      </div>
 
       <div class="mt-2" >
-        <p class="text-center"> Already have an account? <a [routerLink]="['/login']">Log In</a></p>
+        <p class="text-center"> Already have an account? <a routerLink='/login'>Log In</a></p>
       </div>
 
 

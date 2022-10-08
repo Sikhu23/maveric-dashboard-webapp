@@ -11,27 +11,27 @@
         <p>Login to your account to post your ideas & project information.</p>
        </div>
         <div class="mt-2">
-          <form>
+          <form (submit)="login()">
             <div class="form-group m-3">
               <label for="Email" >Email</label>
-              <input type="email" class="form-control mt-1" id="Email" placeholder="First Name">
+              <input type="email" name="email" class="form-control mt-1" id="Email" placeholder="First Name" [(ngModel)]='user.email'>
             </div>
             <div class="form-group m-3">
                 <label for="Password">Password</label>
-                <input type="password" class="form-control mt-1" id="Password"  placeholder="Password">
+                <input type="password" name="password" class="form-control mt-1" id="Password"  placeholder="Password"  [(ngModel)]='user.password'>
             </div>
 
             <!-- <div class="form-group form-check m-3">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">By creating an account you agree to the T&C and our Privacy Policy</label>
             </div> -->
-            <button type="submit" class="btn btn-primary w-100" style="background-color:#653FB1">Signup</button>
+            <button type="submit" class="btn btn-primary w-100" style="background-color:#653FB1">Login</button>
           </form>
         </div>
      </div>
 
       <div class="mt-2" >
-        <p class="text-center"> Don’t have an account? <a [routerLink]="['/signup']">Signup</a></p>
+        <p class="text-center"> Don’t have an account? <a routerLink='/signup'>Signup</a></p>
       </div>
 
 
