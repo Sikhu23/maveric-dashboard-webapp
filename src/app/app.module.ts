@@ -17,6 +17,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { IdeasComponent } from './pages/ideas/ideas.component';
 import { NoopAnimationPlayer } from '@angular/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IdeadetailsComponent } from './pages/ideadetails/ideadetails.component';
 
 
 
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     DashboardComponent,
     SidebarComponent,
-    IdeasComponent
+    IdeasComponent,
+    IdeadetailsComponent
 
   ],
   imports: [

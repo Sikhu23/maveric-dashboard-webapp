@@ -1,0 +1,126 @@
+
+ <div>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div style="margin-top:-13px">
+        User
+
+
+      </div>
+    </div>
+  </nav>
+
+
+<div class="border h-25 w-100" style="background: linear-gradient(213.64deg, #653FB1 12.89%, #361873 93.54%);color:white">
+  <div class="d-flex justify-content-between">
+    <div class="p-2 " >DashBoard</div>
+    <div class="p-2">Last login: [Today] 06 Oct, 2022 @ 18:23</div>
+  </div>
+  <div class="mt-2 p-2">
+    <h3>DashBoard</h3>
+  </div>
+  <div class="mt-2 p-2 w-50">
+    <p>See all the ideas and projects posted by Maveric members. You can create a post for idea or project by going to that category and clicking on the ‘+’ icon.</p>
+
+  </div>
+</div>
+
+
+<div>
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon"><img src="../../../assets/Images/lamp-light-bulb-icon-vector-20716081-e1562701213740-294x300.jpg" height="40" width="40"></mat-icon>
+        Idea
+      </ng-template>
+      <div routerLink="/dashboard">
+        <h4 style="color:#09131C; padding-left:15%"> <img src="../../../assets/Images/backbtn.png" height="30" width="30"> View Details</h4>
+      </div>
+      <div class="mt-5">
+        <p  style="color:#7090A0;padding-left:15%">POST</p>
+      </div>
+      <div class="card" style=" background: #EBEFF3;
+      box-shadow: 0px 4px 12px rgba(57, 57, 57, 0.12);
+      border-radius: 4px;
+      width: 40rem; margin-top: 2%;
+      border:1px solid black;margin-left:15%;">
+        <div class="card-body">
+          <div class="details-dis">
+            <h5 class="card-title">{{ideaDetails.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ideaDetails.time}}</h6>
+          </div>
+
+          <div class="details-dis">
+            <h5 class="card-title">Title</h5>
+          <p class="card-text">{{ideaDetails.desc}}</p>
+          </div>
+
+<div class="details-dis">
+          <h5 class="card-title">RECOMMENDED TECHNOLOGIES</h5>
+          <p class="card-text">{{ideaDetails.tech}}</p>
+
+        </div>
+      <div class="details-dis">
+          <h5 class="card-title">ESTIMATED DURATION</h5>
+          <p class="card-text">T{{ideaDetails.duration}}</p>
+        </div>
+
+
+        <div class="details-dis">
+          <h5 class="card-title">CHALLENGES</h5>
+          <ol class="card-text" type="1" >
+            <span *ngFor="let list of ideaDetails.challenges">
+              <li>{{list}}</li>
+            </span>
+
+          </ol>
+
+        </div>
+
+
+        <div class="details-dis">
+          <h5 class="card-title">REFERENCES</h5>
+          <p class="card-text">{{ideaDetails.ref}}</p>
+        </div>
+        <div class="details-dis">
+          <h5 class="card-title">DOCUMENTS</h5>
+          <p class="card-text">------</p>
+        </div>
+
+
+
+          <a href="#" class="card-link"><img src="../../../assets/Images/Like-Button.webp" height="20" width="16"><span style="margin-left:2%">Like</span></a>
+            <a href="#" class="card-link"><img src="../../../assets/Images/Project.svg" height="20" width="16"><span style="margin-left:2%">Comment</span></a>
+            <a href="#" class="card-link"><img src="../../../assets/Images/Mail-List-Icon.svg" height="20" width="16"><span  style="margin-left:2%">Email</span></a>
+            <a href="#" class="card-link"><img src="../../../assets/Images/share.png" height="20" width="16"><span  style="margin-left:2%">Share</span></a>
+
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon"><img src="../../../assets/Images/Project.svg" height="30" width="30  "></mat-icon>
+        Project
+      </ng-template>
+      Content 2
+    </mat-tab>
+
+
+  </mat-tab-group>
+
+</div>
+</div>
+
+
+<!-- <app-sidebar></app-sidebar> -->
+
+
+
+
+
+

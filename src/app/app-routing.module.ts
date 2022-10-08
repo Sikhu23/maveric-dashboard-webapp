@@ -1,3 +1,4 @@
+import { IdeadetailsComponent } from './pages/ideadetails/ideadetails.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'dashboard',component:DashboardComponent},
+  {path:'ideaDetails/:id',component:IdeadetailsComponent},
   {
     path: '**',
     redirectTo: 'signup'

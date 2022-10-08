@@ -1,7 +1,7 @@
 <div class="">
   <p style="color:#7090A0;padding-left:38%;">Recently Posted</p>
 </div>
-<div class="centered"  *ngFor="let idea of ideas">
+<div class="centered"  *ngFor="let idea of ideas" [routerLink]="['/ideaDetails',idea.name]">
   <div class=" card " style=" background: #EBEFF3;
   box-shadow: 0px 4px 12px rgba(57, 57, 57, 0.12);
   border-radius: 4px;
